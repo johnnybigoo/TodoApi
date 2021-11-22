@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.EntityFrameworkCore;
 using TodoApi.Models;
 
 namespace TodoApi
@@ -22,8 +21,6 @@ namespace TodoApi
     {
       services.AddControllers();
 
-      services.AddDbContext<TodoContext>(opt =>
-                                         opt.UseInMemoryDatabase("TodoList"));
       //services.AddSwaggerGen(c =>
       //{
       //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "TodoApi", Version = "v1" });
