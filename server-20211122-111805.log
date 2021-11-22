@@ -1,1 +1,147 @@
 JsonRpc Information: 3 : Listening started.
+JsonRpc Information: 7 : {"id":0,"method":"textDocument/didChange"}
+JsonRpc Verbose: 7 : Received: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": [
+    {
+      "textDocument": {
+        "uri": "file:///Users/Jones_Mac/Desktop/Templates/CS/TodoApi/models/TodoContext.cs",
+        "version": 16
+      },
+      "contentChanges": [
+        {
+          "text": "using Microsoft.EntityFrameworkCore;\n\nnamespace TodoApi.Models\n{\n  public class TodoContext : DbContext\n  {\n    public TodoContext(DbContextOptions<TodoContext> options)\n        : base(options)\n    {\n    }\n\n    public DbSet<TodoItem> TodoItems { get; set; }\n  }\n}"
+        }
+      ]
+    }
+  ],
+  "id": 0
+}
+JsonRpc Information: 6 : Received request "0" for method "textDocument/didChange".
+JsonRpc Information: 9 : Invoking VSSharperServer.Server.VSSharperServer.TextDocumentDidChange(DidChangeTextDocumentParams)
+JsonRpc Information: 8 : {"id":0}
+JsonRpc Verbose: 8 : Sent: {
+  "jsonrpc": "2.0",
+  "result": null,
+  "id": 0
+}
+JsonRpc Information: 7 : {"id":1,"method":"workspace/executeCommand"}
+JsonRpc Verbose: 7 : Received: {
+  "jsonrpc": "2.0",
+  "method": "workspace/executeCommand",
+  "params": [
+    {
+      "command": "CSharpSortUsingDirectives"
+    }
+  ],
+  "id": 1
+}
+JsonRpc Information: 6 : Received request "1" for method "workspace/executeCommand".
+JsonRpc Information: 9 : Invoking VSSharperServer.Server.VSSharperServer.ExecuteCommand(ExecuteCommandParams)
+JsonRpc Information: 8 : {"id":2,"method":"workspace/applyEdit"}
+JsonRpc Verbose: 8 : Sent: {
+  "jsonrpc": "2.0",
+  "method": "workspace/applyEdit",
+  "params": [
+    {
+      "Edits": [],
+      "TextDocument": {
+        "Uri": "file:///Users/Jones_Mac/Desktop/Templates/CS/TodoApi/models/TodoContext.cs",
+        "Version": 16
+      },
+      "Kind": null,
+      "Options": null,
+      "Uri": null,
+      "NewUri": null,
+      "OldUri": null
+    }
+  ],
+  "id": 2
+}
+JsonRpc Information: 7 : {"id":2}
+JsonRpc Verbose: 7 : Received: {
+  "jsonrpc": "2.0",
+  "result": null,
+  "id": 2
+}
+JsonRpc Information: 11 : Received result for request "2".
+JsonRpc Information: 8 : {"id":1}
+JsonRpc Verbose: 8 : Sent: {
+  "jsonrpc": "2.0",
+  "result": null,
+  "id": 1
+}
+JsonRpc Information: 7 : {"id":2,"method":"textDocument/didChange"}
+JsonRpc Verbose: 7 : Received: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": [
+    {
+      "textDocument": {
+        "uri": "file:///Users/Jones_Mac/Desktop/Templates/CS/TodoApi/models/TodoContext.cs",
+        "version": 20
+      },
+      "contentChanges": [
+        {
+          "text": "using Microsoft.EntityFrameworkCore;\n\nnamespace TodoApi.Models\n{\n  public class TodoContext : DbContext\n  {\n    public TodoContext(DbContextOptions<TodoContext> options)\n        : base(options)\n    {\n    }\n\n    public DbSet<TodoItem> TodoItems { get; set; }\n  }\n\n  public class DbSet<T>\n  {\n  }\n\n  public class DbContextOptions<T>\n  {\n  }\n\n  public class DbContext\n  {\n    public DbContext(DbContextOptions<TodoContext> options)\n    {\n    }\n  }\n}"
+        }
+      ]
+    }
+  ],
+  "id": 2
+}
+JsonRpc Information: 6 : Received request "2" for method "textDocument/didChange".
+JsonRpc Information: 9 : Invoking VSSharperServer.Server.VSSharperServer.TextDocumentDidChange(DidChangeTextDocumentParams)
+JsonRpc Information: 8 : {"id":2}
+JsonRpc Verbose: 8 : Sent: {
+  "jsonrpc": "2.0",
+  "result": null,
+  "id": 2
+}
+JsonRpc Information: 7 : {"id":3,"method":"workspace/executeCommand"}
+JsonRpc Verbose: 7 : Received: {
+  "jsonrpc": "2.0",
+  "method": "workspace/executeCommand",
+  "params": [
+    {
+      "command": "CSharpSortUsingDirectives"
+    }
+  ],
+  "id": 3
+}
+JsonRpc Information: 6 : Received request "3" for method "workspace/executeCommand".
+JsonRpc Information: 9 : Invoking VSSharperServer.Server.VSSharperServer.ExecuteCommand(ExecuteCommandParams)
+JsonRpc Information: 8 : {"id":3,"method":"workspace/applyEdit"}
+JsonRpc Verbose: 8 : Sent: {
+  "jsonrpc": "2.0",
+  "method": "workspace/applyEdit",
+  "params": [
+    {
+      "Edits": [],
+      "TextDocument": {
+        "Uri": "file:///Users/Jones_Mac/Desktop/Templates/CS/TodoApi/models/TodoContext.cs",
+        "Version": 20
+      },
+      "Kind": null,
+      "Options": null,
+      "Uri": null,
+      "NewUri": null,
+      "OldUri": null
+    }
+  ],
+  "id": 3
+}
+JsonRpc Information: 7 : {"id":3}
+JsonRpc Verbose: 7 : Received: {
+  "jsonrpc": "2.0",
+  "result": null,
+  "id": 3
+}
+JsonRpc Information: 11 : Received result for request "3".
+JsonRpc Information: 8 : {"id":3}
+JsonRpc Verbose: 8 : Sent: {
+  "jsonrpc": "2.0",
+  "result": null,
+  "id": 3
+}
